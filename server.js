@@ -30,7 +30,6 @@ function writeData(data) {
 app.post('/student-register', (req, res) => {
     const data = readData();
 
-    // Check if student already exists
     const exists = data.students.find(s => s.email === req.body.email);
     if (exists) return res.redirect('/std-login.html'); // Already registered → go to login
 
@@ -49,7 +48,6 @@ app.post('/student-register', (req, res) => {
     data.students.push(newStudent);
     writeData(data);
 
-    // First-time registration → go directly to student interface
     res.redirect('/student-interface.html');
 });
 
@@ -64,7 +62,6 @@ app.post('/student-login', (req, res) => {
 
     if (!student) return res.send("❌ Invalid email or password");
 
-    // Successful login → redirect to student interface
     res.redirect('/student-interface.html');
 });
 
@@ -90,7 +87,6 @@ app.post('/management-register', (req, res) => {
     data.management.push(newManagement);
     writeData(data);
 
-    // First-time registration → go directly to management interface
     res.redirect('/management-interface.html');
 });
 
