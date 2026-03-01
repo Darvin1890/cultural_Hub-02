@@ -1,0 +1,197 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Page background (NO IMAGE) */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login box */
+.login-container {
+    width: 360px;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+/* Title */
+.login-container h2 {
+    color: #1e3c72;
+    margin-bottom: 8px;
+}
+
+/* Subtitle */
+.login-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 22px;
+}
+
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input focus */
+.login-container input:focus {
+    border-color: #1e3c72;
+    box-shadow: 0 0 5px rgba(30, 60, 114, 0.4);
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button hover */
+.login-container button:hover {
+    background: linear-gradient(135deg, #16315c, #1e3c72);
+}
+
+/* Links */
+.links {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+/* Anchor styling */
+.links a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* ============================= */
+/* 🔥 GLOBAL PAGE FADE ANIMATION */
+/* ============================= */
+
+body {
+    animation: fadePage 0.8s ease-in-out;
+}
+
+@keyframes fadePage {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ============================= */
+/* 🔥 CARD FLOATING ANIMATION */
+/* ============================= */
+
+.center,
+.header,
+.login-container,
+.forgot,
+body > div {
+    animation: floatCard 1s ease;
+}
+
+@keyframes floatCard {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ============================= */
+/* 🔥 INPUT INTERACTIVE EFFECT */
+/* ============================= */
+
+input,
+.center input,
+.login-container input,
+.forgot input,
+.input {
+    transition: all 0.3s ease;
+}
+
+input:focus,
+.center input:focus,
+.login-container input:focus,
+.forgot input:focus,
+.input:focus {
+    transform: scale(1.05);
+}
+
+
+/* ============================= */
+/* 🔥 BUTTON HOVER + PRESS EFFECT */
+/* ============================= */
+
+button,
+.btn-submit,
+.center button,
+.login-container button,
+.forgot button {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn-submit:hover,
+.center button:hover,
+.login-container button:hover,
+.forgot button:hover {
+    transform: translateY(-4px);
+}
+
+button:active,
+.btn-submit:active {
+    transform: scale(0.95);
+}
+
+
+/* ============================= */
+/* 🔥 LINK SMOOTH HOVER EFFECT */
+/* ============================= */
+
+a {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}

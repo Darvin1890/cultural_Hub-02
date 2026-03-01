@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard - College Event Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="interface.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>🎓 College Event Portal</h2>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">My Registrations</a>
+            <a href="#">Announcements</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li> <a href="student-interface.html">Dashboard</a></li>
+                <li><a href="student-interface2.html">Upcoming Events</a></li>
+                <li> <a href="student-interface3.html">My Registrations</a></li>
+                <li> <a href="student-interface4.html">Notifications</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Section -->
+        <div class="main">
+
+            <div class="welcome-box">
+                <h3>Welcome, Student!</h3>
+                <p>Browse and register for college events here.</p>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search events...">
+                </div>
+            </div>
+
+            <h3>Upcoming Events</h3>
+
+            <div class="events">
+                <div class="card">
+                    <img src="assets/cultural.jpeg" alt="Cultural">
+                    <div class="card-content">
+                        <h4>Cultural Fest</h4>
+                        <p>25th March 2026</p>
+                        <p>Music, Dance & More!</p>
+                        <button class="btn">Register Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/tech.jpeg" alt="Webinar">
+                    <div class="card-content">
+                        <h4>Tech Webinar</h4>
+                        <p>29th March 2026</p>
+                        <p>AI & Robotics Innovations</p>
+                        <button class="btn">Register Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/sports.jpeg" alt="Sports">
+                    <div class="card-content">
+                        <h4>Sports Tournament</h4>
+                        <p>2nd April 2026</p>
+                        <p>Inter-dept Championship</p>
+                        <button class="btn">Register Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="categories">
+                <h3>Categories</h3>
+                <span>Workshops</span>
+                <span>Seminars</span>
+                <span>Sports Events</span>
+                <span>Cultural Programs</span>
+            </div>
+
+            <!-- Registrations -->
+            <div class="registrations">
+                <h3>My Registrations</h3>
+
+                <table>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Cyber Security Workshop</td>
+                        <td>15th March 2026</td>
+                        <td class="status-registered">Registered</td>
+                    </tr>
+                    <tr>
+                        <td>Art & Photography Expo</td>
+                        <td>20th March 2026</td>
+                        <td class="status-pending">Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Department Quiz Contest</td>
+                        <td>25th March 2026</td>
+                        <td class="status-confirmed">Confirmed</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

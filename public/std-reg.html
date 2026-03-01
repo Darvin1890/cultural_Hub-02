@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div class="header">
+        <h2>🎓 Student Registration</h2>
+        <p align="center">Create Your Account</p>
+
+        <form action="/student-register" method="post">
+            <div>
+                <input type="text" id="name" name="name" class="input" placeholder="Name" required>
+            </div>
+            <div>
+                <input type="tel"  name="mobile" class="input" placeholder="Mobile Number" required>
+            </div>
+            <div>
+                <input type="text" id="collegename" name="college" class="input" placeholder="College Nmae" required>
+            </div>
+            <div>
+                <input type="email" name="email" class="input" placeholder="Email Address" required>
+            </div>
+            <div>
+                <input type="password" name="password" class="input" placeholder="Create Password" required>
+            </div>
+            <div>
+                 <input type="password" name="cpassword" class="input" placeholder="Confirm Password" required>
+            </div>
+            <br>
+            <div>
+                <button type="submit" class="btn-submit">Register</button>
+            </div>
+
+        
+           
+        </form>
+
+    <script src="./JS/main.js"></script>
+</body>
+</html>

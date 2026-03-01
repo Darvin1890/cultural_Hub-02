@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "name": "Darvin Francis",
+      "email": "francisdarvin123@gmail.com",
+      "mobile": "6381256750",
+      "password": "Darvin@1"
+    },
+    {
+      "name": "simon",
+      "email": "simon123@gmail.com",
+      "college": "ckec",
+      "mobile": "6374640074",
+      "password": "Simon@1"
+    }
+  ],
+  "management": [
+    {
+      "email": "francisdarvin123@gmail.com",
+      "password": "Darvin@2"
+    },
+    {
+      "email": "francisdarvin123@gmail.com",
+      "password": "Darvin@2"
+    },
+    {
+      "email": "francisdarvin123@gmail.com",
+      "mobile": "6381256750",
+      "password": "Dar@1"
+    }
+  ]
+}

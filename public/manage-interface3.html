@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Event Portal - Registrations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="manage-interface3.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>College Event System</h2>
+        <ul>
+            <li> <a href="management-interface.html">Dashboard</a></li>
+            <li> <a href="manage-interface2.html">Events</a></li>
+            <li class="active">Registrations</li>
+            <li>Analytics</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <input type="text" placeholder="Search...">
+            <div class="user-profile">
+                <span>Admin</span>
+                <img src="https://i.pravatar.cc/40" alt="profile">
+            </div>
+        </div>
+
+        <!-- Page Title -->
+        <h2 class="page-title">Manage Registrations</h2>
+
+        <!-- Filters -->
+        <div class="filters">
+            <input type="text" placeholder="Search student...">
+            <select>
+                <option>All Events</option>
+                <option>Tech Workshop</option>
+                <option>Business Seminar</option>
+                <option>Soccer Tournament</option>
+            </select>
+            <select>
+                <option>All Status</option>
+                <option>Approved</option>
+                <option>Pending</option>
+                <option>Rejected</option>
+            </select>
+            <button class="filter-btn">Filter</button>
+        </div>
+
+        <!-- Table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Event Name</th>
+                        <th>Category</th>
+                        <th>Registration Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Tech Workshop</td>
+                        <td>Workshops</td>
+                        <td>May 25, 2024</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td>
+                            <button class="approve">✔</button>
+                            <button class="reject">✖</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Sarah Lee</td>
+                        <td>Business Seminar</td>
+                        <td>Seminars</td>
+                        <td>May 22, 2024</td>
+                        <td><span class="status approved">Approved</span></td>
+                        <td>
+                            <button class="approve">✔</button>
+                            <button class="reject">✖</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Emily Johnson</td>
+                        <td>Cultural Night</td>
+                        <td>Cultural</td>
+                        <td>May 20, 2024</td>
+                        <td><span class="status rejected">Rejected</span></td>
+                        <td>
+                            <button class="approve">✔</button>
+                            <button class="reject">✖</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button>&lt;</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>&gt;</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

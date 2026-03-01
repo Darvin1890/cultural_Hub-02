@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Portal - Events</title>
+    <link rel="stylesheet" href="manage-interface2.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>College Event System</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li class="active">Events</li>
+            <li>Registrations</li>
+            <li>Analytics</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <input type="text" placeholder="Search events...">
+            <div class="user-info">
+                <span>Admin</span>
+                <img src="https://i.pravatar.cc/40" alt="Profile">
+            </div>
+        </div>
+
+        <!-- Page Title & Filters -->
+        <div class="page-header">
+            <h3>Manage Events</h3>
+            <div class="filters">
+                <input type="text" placeholder="Search events...">
+                <select>
+                    <option>All Categories</option>
+                    <option>Workshops</option>
+                    <option>Seminars</option>
+                    <option>Sports</option>
+                    <option>Cultural</option>
+                </select>
+                <select>
+                    <option>All Statuses</option>
+                    <option>Active</option>
+                    <option>Pending</option>
+                    <option>Cancelled</option>
+                </select>
+                <button>Filter</button>
+            </div>
+        </div>
+
+        <!-- Events Table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date & Time</th>
+                        <th>Category</th>
+                        <th>Registrations</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tech Workshop</td>
+                        <td>May 28, 2024 10:00 AM</td>
+                        <td>Workshops</td>
+                        <td>120</td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Business Seminar</td>
+                        <td>June 5, 2024 2:00 PM</td>
+                        <td>Seminars</td>
+                        <td>85</td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Soccer Tournament</td>
+                        <td>June 12, 2024 8:00 AM</td>
+                        <td>Sports</td>
+                        <td>150</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cultural Night</td>
+                        <td>June 20, 2024 6:00 PM</td>
+                        <td>Cultural</td>
+                        <td>240</td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coding Hackathon</td>
+                        <td>July 3, 2024 9:00 AM</td>
+                        <td>Workshops</td>
+                        <td>200</td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button>&lt;</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>&gt;</button>
+        </div>
+    </div>
+</body>
+</html>

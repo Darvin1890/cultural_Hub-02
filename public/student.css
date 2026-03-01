@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(asset/std\ reg\ outer.png);
+}
+
+.header{
+    width: 420px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.header h2{
+    text-align: center;
+    margin-bottom: 6px;
+    color: #1e40af;
+}
+
+.header p{
+    text-align: center;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.input{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.input:focus{
+    outline: none;
+    border: 1px solid #1e40af;
+}
+
+.btn-submit{
+    width: 100%;
+    padding: 12px;
+    background: #1e40af;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    background: #162d8f;
+}
+
+/* Mobile Responsive */
+@media(max-width:500px){
+    .header{
+        width: 95%;
+    }
+}
+
+
+
+
+
+
+/* ============================= */
+/* 🔥 GLOBAL PAGE FADE ANIMATION */
+/* ============================= */
+
+body {
+    animation: fadePage 0.8s ease-in-out;
+}
+
+@keyframes fadePage {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ============================= */
+/* 🔥 CARD FLOATING ANIMATION */
+/* ============================= */
+
+.center,
+.header,
+.login-container,
+.forgot,
+body > div {
+    animation: floatCard 1s ease;
+}
+
+@keyframes floatCard {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ============================= */
+/* 🔥 INPUT INTERACTIVE EFFECT */
+/* ============================= */
+
+input,
+.center input,
+.login-container input,
+.forgot input,
+.input {
+    transition: all 0.3s ease;
+}
+
+input:focus,
+.center input:focus,
+.login-container input:focus,
+.forgot input:focus,
+.input:focus {
+    transform: scale(1.05);
+}
+
+
+/* ============================= */
+/* 🔥 BUTTON HOVER + PRESS EFFECT */
+/* ============================= */
+
+button,
+.btn-submit,
+.center button,
+.login-container button,
+.forgot button {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn-submit:hover,
+.center button:hover,
+.login-container button:hover,
+.forgot button:hover {
+    transform: translateY(-4px);
+}
+
+button:active,
+.btn-submit:active {
+    transform: scale(0.95);
+}
+
+
+/* ============================= */
+/* 🔥 LINK SMOOTH HOVER EFFECT */
+/* ============================= */
+
+a {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
